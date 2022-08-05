@@ -1,0 +1,96 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/Home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/tabBar/template/template",
+			"style": {
+				"navigationBarTitleText": "框架",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/tabBar/Image/image",
+			"style": {
+				"navigationBarTitleText": "相册",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		},{
+			"path": "pages/tabBar/About/about",
+			"style": {
+				"navigationBarTitleText": "关于",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+			"pagePath": "pages/tabBar/Home/home",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/home-active.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/tabBar/template/template",
+			"iconPath": "static/template.png",
+			"selectedIconPath": "static/templateHL.png",
+			"text": "框架"
+		}, {
+			"pagePath": "pages/tabBar/Image/image",
+			"iconPath": "static/image.png",
+			"selectedIconPath": "static/image-active.png",
+			"text": "相册"
+		}, {
+			"pagePath": "pages/tabBar/About/about",
+			"iconPath": "static/star.png",
+			"selectedIconPath": "static/star-active.png",
+			"text": "关于"
+		}]
+	},
+	"uniIdRouter": {}
+}
