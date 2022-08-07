@@ -244,20 +244,82 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "uni-view",
-    { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
+    { attrs: { _i: 0 } },
     [
-      _c("v-uni-image", {
-        staticClass: _vm._$g(1, "sc"),
-        attrs: { src: "/static/logo.png", _i: 1 }
-      }),
       _c(
         "uni-view",
-        { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
         [
           _c(
-            "v-uni-text",
-            { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
-            [_vm._v(_vm._$g(3, "t0-0"))]
+            "v-uni-swiper",
+            {
+              staticClass: _vm._$g(2, "sc"),
+              attrs: {
+                circular: true,
+                "indicator-dots": _vm._$g(2, "a-indicator-dots"),
+                autoplay: _vm._$g(2, "a-autoplay"),
+                interval: _vm._$g(2, "a-interval"),
+                duration: _vm._$g(2, "a-duration"),
+                _i: 2
+              }
+            },
+            [
+              _c(
+                "v-uni-swiper-item",
+                { attrs: { _i: 3 } },
+                [
+                  _c(
+                    "uni-view",
+                    { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
+                    [
+                      _c("v-uni-image", {
+                        staticClass: _vm._$g(5, "sc"),
+                        attrs: { src: "/static/logo.png", _i: 5 }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _c(
+                "v-uni-swiper-item",
+                { attrs: { _i: 6 } },
+                [
+                  _c(
+                    "uni-view",
+                    { staticClass: _vm._$g(7, "sc"), attrs: { _i: 7 } },
+                    [
+                      _c("v-uni-image", {
+                        staticClass: _vm._$g(8, "sc"),
+                        attrs: { src: "/static/logo.png", _i: 8 }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _c(
+                "v-uni-swiper-item",
+                { attrs: { _i: 9 } },
+                [
+                  _c(
+                    "uni-view",
+                    { staticClass: _vm._$g(10, "sc"), attrs: { _i: 10 } },
+                    [
+                      _c("v-uni-image", {
+                        staticClass: _vm._$g(11, "sc"),
+                        attrs: { src: "/static/logo.png", _i: 11 }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
           )
         ],
         1
@@ -354,7 +416,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.content {\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n}\n.logo {\n\theight: 200rpx;\n\twidth: 200rpx;\n\tmargin-top: 200rpx;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\tmargin-bottom: 50rpx;\n}\n.text-area {\n\tdisplay: flex;\n\tjustify-content: center;\n}\n.title {\n\tfont-size: 36rpx;\n\tcolor: #8f8f94;\n}\n", ""]);
+exports.push([module.i, "\n.uni-margin-wrap {\n\twidth: 690rpx;\n\twidth: 100%;\n}\n.swiper {\n\theight: 300rpx;\n}\n.swiper-item {\n\tdisplay: block;\n\theight: 300rpx;\n\tline-height: 300rpx;\n\ttext-align: center;\n}\n.swiper-list {\n\tmargin-top: 40rpx;\n\tmargin-bottom: 0;\n}\n.uni-common-mt {\n\tmargin-top: 60rpx;\n\tposition: relative;\n}\n.info {\n\tposition: absolute;\n\tright: 20rpx;\n}\n.uni-padding-wrap {\n\twidth: 550rpx;\n\tpadding: 0 100rpx;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
